@@ -1,300 +1,282 @@
-
 <style>
-    *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 100%;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 100%;
     }
-    :root{
-    font-family: Ubuntu,sans-serif;
+
+    :root {
+        font-family: Ubuntu, sans-serif;
     }
-    img{
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
+
+    img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
     }
-    h2{
-    font-size: 14px;
-    font-weight: 700;
-    
+
+    h3 {
+        font-size: 52px;
+        font-family: Barlow Condensed, sans-serif;
     }
-    h3{
-    font-size: 52px;
-    font-family: Barlow Condensed,sans-serif;
+
+    .title__experience {
+        color: #f6c43d;
     }
-    .meet-fastcar__section{
-    background-image:url(img/car-about-us.webp);
-    background-size: cover;
-    background-position: center;
-    min-width: 320px;
-    align-items: left;
-    padding-top: 50px;
-    padding-bottom: 60px;
-    margin-left:100px;
-    
+
+    .header__experience {
+        text-align: center;
     }
-    .meet-fastcar__header{
-    font-size: 14px;
-    color: #f6c43d;
-    text-transform: uppercase;
-    font-weight: 700;
+
+    .text__experience {
+        color: #898989;
     }
-    
-    .about-us__subtitle{
-    color: #222;
+
+    h4 {
+        font-size: 90px;
     }
-    .fat__text__meet-fastcar{
-    font-size: 18px;
-    
+
+    .experience__container_2010 {
+        background-color: rgb(2, 2, 4);
+        display: flex;
+        padding: 50px;
+        margin: 25px 100px 25px 100px;
+        align-items: center;
+        border-radius: 1%
     }
-    .meet-fastcar__text{
-    color:#898989;
+
+    .title__2010 {
+        color: white;
+        padding-bottom: 10px;
+        letter-spacing: -5px;
+        font-weight: 600;
     }
-    .buttton__about-us{
-    padding-top: 50px;
+
+    #text__2010 {
+        color: #898989;
+        font-size: 20px;
     }
-    .title__experience{
-    color: #f6c43d;
+
+    .experience__black-car-element {
+        padding-right: 75px;
+
     }
-    .header__experience{
-    text-align: center;
+
+    .img__black-car-element {
+        object-position: 100% 50%;
+        object-fit: cover;
     }
-    .text__experience{
-    color: #898989;
+
+    .emphasis__2010 {
+        width: 11%;
+        height: 3px;
+        background-color: #f6c43d;
+        margin-bottom: 10px;
     }
-    h4{
-    font-size: 90px;
+
+    .experience__container__2012 {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 50px;
+        margin: 25px 100px 25px 100px;
+        align-items: center;
+        border-radius: 1%;
+
     }
-    .experience__container_2010{
-    background-color: rgb(2, 2, 4);
-    display: flex;
-    padding: 50px;
-    margin: 25px 100px 25px 100px;
-    align-items: center;
-    border-radius: 1%
-    
+
+    .title__2012 {
+        color: black;
+        padding-bottom: 10px;
+        letter-spacing: -5px;
+        font-weight: 600;
     }
-    .title__2010{
-    color:white;
-    padding-bottom: 10px;
-    letter-spacing: -5px;
-    font-weight: 600;
+
+    .text__2012 {
+        color: #898989;
+        font-size: 20px;
     }
-    #text__2010{
-    color: #898989;
-    font-size: 20px;
+
+    .experience__blue-car {
+        padding-left: 75px;
     }
-    .experience__black-car-element{
-    padding-right: 75px;
-    
+
+    .img__blue-car {
+        object-position: 73.548% 53.858%;
+        object-fit: cover;
     }
-    .img__black-car-element{
-     object-position: 100% 50%;
-     object-fit:cover;
+
+    .emphasis__2012 {
+        width: 11%;
+        height: 3px;
+        background-color: blue;
+        margin-bottom: 10px;
     }
-    .emphasis__2010{
-    width: 11%;
-    height: 3px;
-    background-color: #f6c43d;
-    margin-bottom: 10px;
+
+    .experience__container__2015 {
+        background-color: rgb(16 18 38);
+        display: flex;
+        padding: 50px;
+        margin: 25px 100px 25px 100px;
+        align-items: center;
+        border-radius: 1%;
+
     }
-    .experience__container__2012{
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 50px;
-    margin: 25px 100px 25px 100px;
-    align-items: center;
-    border-radius: 1%;
-    
+
+    .title__2015 {
+        color: white;
+        padding-bottom: 10px;
+        letter-spacing: -5px;
+        font-weight: 600;
     }
-    .title__2012{
-    color:black;
-    padding-bottom: 10px;
-    letter-spacing: -5px;
-    font-weight: 600;
+
+    .text__2015 {
+        color: #898989;
+        font-size: 20px;
     }
-    .text__2012{
-    color: #898989;
-    font-size: 20px;
+
+    .experience__cars-chairs {
+        padding-right: 75px;
     }
-    .experience__blue-car{
-    padding-left: 75px;
+
+    .img__cars-chairs {
+        object-position: 28.418% 50%;
+        object-fit: cover;
     }
-    .img__blue-car{
-     object-position: 73.548% 53.858%;
-     object-fit:cover;
+
+    .emphasis__2015 {
+        width: 11%;
+        height: 3px;
+        background-color: yellow;
+        margin-bottom: 10px;
     }
-    .emphasis__2012{
-    width: 11%;
-    height: 3px;
-    background-color:blue;
-    margin-bottom: 10px;
+
+    .experience__container__2019 {
+        display: flex;
+        background-color: rgb(221, 226, 233);
+        flex-direction: row-reverse;
+        padding: 50px;
+        margin: 25px 100px 25px 100px;
+        align-items: center;
+        border-radius: 1%
     }
-    .experience__container__2015{
-    background-color: rgb(16 18 38);
-    display: flex;
-    padding: 50px;
-    margin: 25px 100px 25px 100px;
-    align-items: center;
-    border-radius: 1%;
-    
+
+    .title__2019 {
+        color: black;
+        padding-bottom: 10px;
+        letter-spacing: -5px;
+        font-weight: 600;
     }
-    .title__2015{
-    color:white;
-    padding-bottom: 10px;
-    letter-spacing: -5px;
-    font-weight: 600;
+
+    .text__2019 {
+        color: #898989;
+        font-size: 20px;
     }
-    .text__2015{
-    color: #898989;
-    font-size: 20px;
+
+    .experience__cars-doors {
+        padding-left: 75px;
     }
-    .experience__cars-chairs{
-    padding-right: 75px;
+
+    .img__cars-doors {
+        object-position: 40.322% 50%;
+        object-fit: cover;
     }
-    .img__cars-chairs{
-    object-position: 28.418% 50%;
-     object-fit:cover;
+
+    .emphasis__2019 {
+        width: 11%;
+        height: 3px;
+        background-color: blue;
+        margin-bottom: 10px;
     }
-    .emphasis__2015{
-    width: 11%;
-    height: 3px;
-    background-color:yellow;
-    margin-bottom: 10px;
-    }
-    .experience__container__2019{
-    display: flex;
-    background-color: rgb(221, 226, 233);
-    flex-direction: row-reverse;
-    padding: 50px;
-    margin: 25px 100px 25px 100px;
-    align-items: center;
-    border-radius: 1%
-    
-    
-    }
-    .title__2019{
-    color:black;
-    padding-bottom: 10px;
-    letter-spacing: -5px;
-    font-weight: 600;
-    }
-    .text__2019{
-    color: #898989;
-    font-size: 20px;
-    }
-    .experience__cars-doors{
-    padding-left: 75px;
-    }
-    .img__cars-doors{
-    object-position: 40.322% 50%;
-     object-fit:cover;
-    }
-    .emphasis__2019{
-    width: 11%;
-    height: 3px;
-    background-color:blue;
-    margin-bottom: 10px;
-    }
-    </style>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-    </head>
-    <body>
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
     <main>
-        <!-- <section class="meet-fastcar__section">
-             <div class ="meet-fastcar__div">
-                         <span class="meet-fastcar__header">
-                     <h2>— Meet fastcar</h2>
-                 </span>
-    
-                 <div class="ccc">
-                 <span class="about-us__subtitle">
-                     <h3 class="about-us__text">About Us</h3>
-                     </span>
-                 <span class="fat__text__meet-fastcar">
-                     <p class="fat__text__meet-fastcar1" ><strong>We do everything for you to drive with <br> maximum comfort!</strong></p>
-                 </span>
-                 <span class="meet-fastcar__text">
-                     <p>Our company has been operating on the <br> US car rental market for over 10 years. <br> You can rent a car for any purpose, from <br> a business trip to conquering roads with <br> difficult surfaces.<br><br>
-                         We have several pick-up locations in New <br> York so that you can take and leave the <br> rented car in any convenient place. <br> FASTCAR offers the most favorable <br> conditions for car rental.</p>
-                 </span>
-                 <div class="group__button__about-us">
-                     <div class="buttton__about-us">
-                     <a class="contact-us__button" href="#contact__us">CONTACT US</a>
-                     </div>
-                 </div>
-                 </div>
-    
-             </div>
-             <div class="car-about-us">
-    
-             </div>
-         </section>-->
-    
-    <section class="experience__section">
+
+
+        <section class="experience__section">
             <div class="experience__div">
-               <div class="header__experience">
-                   <span class="title__experience">
-                   <h2>— EXPERIENCE</h2>
-                   </span>
-                 <span class="subtitle__experience">
-                   <h3 class="brief-history">Brief History</h3>
-                 </span>
-                   <span class="text__experience">
-                       <p>Our first office was opened 10 years ago. Throughout our history, we've worked hard to<br> provide you with maximum comfort when traveling and moving around the city.</p>
-                   </span>
-               </div>
+                <div class="header__experience">
+                    <span class="title__experience">
+                        <h2>— EXPERIENCE</h2>
+                    </span>
+                    <span class="subtitle__experience">
+                        <h3 class="brief-history">Brief History</h3>
+                    </span>
+                    <span class="text__experience">
+                        <p>Our first office was opened 10 years ago. Throughout our history, we've worked hard to<br>
+                            provide you with maximum comfort when traveling and moving around the city.</p>
+                    </span>
+                </div>
                 <div class="experience__container_2010">
-                     <div class="experience__black-car-element">
-                     <img class="img__black-car-element" width="500" height="350" src="C:\Users\Hewlett Packard\IdeaProjects\untitled\img\black-car-element-experience.png" alt="black car element">
+                    <div class="experience__black-car-element">
+                        <img class="img__black-car-element" width="500" height="350"
+                            src="C:\Users\Hewlett Packard\IdeaProjects\untitled\img\black-car-element-experience.png"
+                            alt="black car element">
                     </div>
                     <span class="experience__subtitle__2010">
-                    <h4 class="title__2010">2010</h4>
-                    <div class="emphasis__2010"></div>
-                        <p id="text__2010">Our CEO came up with the idea of creating a <br> rental company with budget cars. We started <br> with two used cars that were kept in the <br> founder’s garage.</p>
-                       </span>
-    
-                 </div>
+                        <h4 class="title__2010">2010</h4>
+                        <div class="emphasis__2010"></div>
+                        <p id="text__2010">Our CEO came up with the idea of creating a <br> rental company with budget
+                            cars. We started <br> with two used cars that were kept in the <br> founder’s garage.</p>
+                    </span>
+
+                </div>
                 <div class="experience__container__2012">
                     <div class="experience__blue-car">
-                        <img class="img__blue-car" width="500" height="350" src="C:\Users\Hewlett Packard\IdeaProjects\untitled\img\blue-car-experience.png" alt="blue car ">
+                        <img class="img__blue-car" width="500" height="350"
+                            src="C:\Users\Hewlett Packard\IdeaProjects\untitled\img\blue-car-experience.png"
+                            alt="blue car ">
                     </div>
                     <span class="experience__subtitle__2012">
                         <h4 class="title__2012">2012</h4>
-                         <div class="emphasis__2012"></div>
-                        <p class="text__2012">The first expansion of FASTCAR took place.<br> Customers were interested in renting cars, so we <br> started to buy used cars in good condition and <br> expanded the fleet to 15 cars.</p>
-                     </span>
+                        <div class="emphasis__2012"></div>
+                        <p class="text__2012">The first expansion of FASTCAR took place.<br> Customers were interested
+                            in renting cars, so we <br> started to buy used cars in good condition and <br> expanded the
+                            fleet to 15 cars.</p>
+                    </span>
                 </div>
                 <div class="experience__container__2015">
                     <div class="experience__cars-chairs">
-                        <img  сlass="img__cars-chairs" width="500" height="350" src="C:\Users\Hewlett Packard\IdeaProjects\untitled\img\car-chair-experience.png" alt="car's chair">
+                        <img сlass="img__cars-chairs" width="500" height="350"
+                            src="C:\Users\Hewlett Packard\IdeaProjects\untitled\img\car-chair-experience.png"
+                            alt="car's chair">
                     </div>
                     <span class="experience__subtitle__2015">
                         <h4 class="title__2015">2015</h4>
                         <div class="emphasis__2015"></div>
-                        <p class="text__2015">We opened new rental segments - business class<br>and SUVs. We bought 5 new cars for each<br>segment. Jaguar XJ, Ford Mustang GT, BMW 7-<br>series joined our fleet.</p>
-                   </span>
-    
+                        <p class="text__2015">We opened new rental segments - business class<br>and SUVs. We bought 5
+                            new cars for each<br>segment. Jaguar XJ, Ford Mustang GT, BMW 7-<br>series joined our fleet.
+                        </p>
+                    </span>
+
                 </div>
                 <div class="experience__container__2019">
                     <div class="experience__cars-doors">
-                        <img class="img__cars-doors" width="500" height="350" src="C:\Users\Hewlett Packard\IdeaProjects\untitled\img\car-doors-experience.png" alt="car's doors">
+                        <img class="img__cars-doors" width="500" height="350"
+                            src="C:\Users\Hewlett Packard\IdeaProjects\untitled\img\car-doors-experience.png"
+                            alt="car's doors">
                     </div>
                     <span class="experience__subtitle__2019">
                         <h4 class="title__2019">2019</h4>
                         <div class="emphasis__2019"></div>
-                        <p class="text__2019">We completely reoriented to premium car <br> rental. A segment of sports cars was added, we <br> bought 4 sports cars including Ferrari 430 Italia <br> and Aston Martin Valkyrie.</p>
-                   </span>
-    
+                        <p class="text__2019">We completely reoriented to premium car <br> rental. A segment of sports
+                            cars was added, we <br> bought 4 sports cars including Ferrari 430 Italia <br> and Aston
+                            Martin Valkyrie.</p>
+                    </span>
+
                 </div>
             </div>
         </section>
-    
+
     </main>
-    </body>
-    </html>
+</body>
+
+</html>
