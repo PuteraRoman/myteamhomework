@@ -23,6 +23,7 @@ background-image:url(img/car-about-us.webp);
 background-position: right 80% bottom 30%;
 background-size: 1500px;
 margin: 0px;
+
 }
 .meet-fastcar__div{
     margin: 100px;
@@ -79,7 +80,19 @@ margin-top: 70px;
     font-weight: 600;
 }
 .contact-us__button:hover{
-background-color:rgb(250, 224, 75);
+background-color:rgb(241, 218, 85);
+}
+#more{
+    display: none;
+    
+}
+#btn{
+    color: white;
+    border-radius: 50% 50%;
+    background-color: #1088e4;
+    padding: 5px;
+    border-color: #1088e4;
+    margin-top: 10px;
 }
 </style>
 <!DOCTYPE html>
@@ -110,14 +123,14 @@ background-color:rgb(250, 224, 75);
                         </span>
                   
                     <span class="meet-fastcar__text">
-                        <p>Our company has been operating on the  US car <br> rental market for over 10 years. You
-                            can rent a <br> car for any purpose, from  a business trip to <br> conquering roads with 
+                        <p>Our company has been operating on the  US car <br> rental market for over 10 years. ou
+                            can rent a <br> car for any purpose, from <span id="dots">...</span><span id="more">  a business trip to <br> conquering roads with 
                             difficult surfaces.<br><br>
                             We have several pick-up locations in New York <br> so that you can take and leave the 
                             rented car in <br> any convenient place. FASTCAR offers the most <br> favorable conditions
-                            for car rental.</p>
+                            for car rental.</span></p>
                     </span>
-                   
+                   <button id="btn" onclick="readMore()">More</button>
                         <div class="button__about-us">
                             <a class="contact-us__button" href="#contact__us">CONTACT US</a>
                         </div>
@@ -129,5 +142,5 @@ background-color:rgb(250, 224, 75);
 
     </main>
 </body>
-
+<script src="js/readmore.js"> </script>
 </html>
