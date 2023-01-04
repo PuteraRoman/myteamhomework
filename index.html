@@ -1,101 +1,117 @@
 <style>
-   @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap');
-   @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Ubuntu&family=Ubuntu+Condensed&display=swap');
-   *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-size: 100%;
-}
-:root{
-font-family: Ubuntu,sans-serif;
-}
-img{
-display: block;
-max-width: 100%;
-max-height: 100%;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Ubuntu&family=Ubuntu+Condensed&display=swap');
 
-.meet-fastcar__section{
-display: flex;
-flex-direction: column;
-background-image:url(img/car-about-us.webp);
-background-position: right 80% bottom 30%;
-background-size: 1500px;
-margin: 0px;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 100%;
+    }
 
-background-repeat: no-repeat;
+    :root {
+        font-family: Ubuntu, sans-serif;
+    }
 
-}
-.meet-fastcar__div{
-    margin: 100px;
-}
-.meet-fastcar__header{
-color: #f6c43d;
-font-size: 14px;
-font-family: Ubuntu,sans-serif;
-margin: 15px;
-letter-spacing: .1em;
-font-weight: 600;
-}
-.about-us__subtitle{
-font-size: 66px;
-font-family: Barlow Condensed,sans-serif;
-padding-top: 20px;
-padding-bottom: 15px;
-letter-spacing: 0em;
-line-height: 52px;
-color:#222;
-}
+    img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+    }
 
-.fat__text__meet-fastcar{
-    font-size: 18px;
-    font-family: Ubuntu,sans-serif;
-    padding-bottom: 15px;
-    letter-spacing: -.018em;
-    line-height: 1.62;
-    color:#222;
-    
-}
-.meet-fastcar__text{
-    color: #898989;
-    font-size: 17px;
-    font-family:Ubuntu,sans-serif; 
-    font-weight: 400;
-    line-height: 27.54px;
-}
-.button__about-us{
-margin-top: 70px;
-}
-.contact-us__button{
-    background-color: #1088e4;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16.5px;
-    margin: 35px -6px;
-    cursor: pointer;
-    border-radius: 27px;;
-    font-weight: 600;
-}
-.contact-us__button:hover{
-background-color:rgb(241, 218, 85);
-}
-#more{
-    display: none;
-    
-}
-#btn{
-    color: white;
-    border-radius: 50% 50%;
-    background-color: #1088e4;
-    padding: 5px;
-    border-color: #1088e4;
-    margin-top: 10px;
-}
+    .meet-fastcar__section {
+        display: flex;
+        flex-direction: column;
+        background-image: url(img/car-about-us.webp);
+        background-position: right 80% bottom 30%;
+        background-size: 1500px;
+        margin: 0px;
+        background-repeat: no-repeat;
+
+    }
+
+    .meet-fastcar__div {
+        margin: 100px;
+    }
+
+    .meet-fastcar__header {
+        color: #f6c43d;
+        font-size: 14px;
+        font-family: Ubuntu, sans-serif;
+        margin: 15px;
+        letter-spacing: .1em;
+        font-weight: 600;
+    }
+
+    .about-us__subtitle {
+        font-size: 66px;
+        font-family: Barlow Condensed, sans-serif;
+        padding-top: 20px;
+        padding-bottom: 15px;
+        letter-spacing: 0em;
+        line-height: 52px;
+        color: #222;
+    }
+
+    .fat__text__meet-fastcar {
+        font-size: 18px;
+        font-family: Ubuntu, sans-serif;
+        padding-bottom: 15px;
+        letter-spacing: -.018em;
+        line-height: 1.62;
+        color: #222;
+
+    }
+
+    .meet-fastcar__text {
+        color: #898989;
+        font-size: 17px;
+        font-family: Ubuntu, sans-serif;
+        font-weight: 400;
+        line-height: 27.54px;
+    }
+
+    .button__about-us {
+        margin-top: 70px;
+    }
+
+    .contact-us__button {
+        background-color: #1088e4;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16.5px;
+        margin: 35px -6px;
+        cursor: pointer;
+        border-radius: 27px;
+        ;
+        font-weight: 600;
+    }
+
+    .contact-us__button:hover {
+        background-color: rgb(241, 218, 85);
+    }
+
+    #more {
+        display: none;
+
+    }
+
+    #btn {
+        color: white;
+        border-radius: 50% 50%;
+        background-color: #1088e4;
+        padding: 5px;
+        border-color: #1088e4;
+        margin-top: 10px;
+    }
+    #btn:hover {
+        border-color: #f6c43d;
+        background-color: #f6c43d;
+    }
 </style>
 <!DOCTYPE html>
 <html lang="en">
@@ -109,35 +125,37 @@ background-color:rgb(241, 218, 85);
     <main>
         <section class="meet-fastcar__section">
             <div class="meet-fastcar__div">
-               
-                    <span class="meet-fastcar__header">
-                        <h2 class="meet-fastcar__header">— MEET FASTCAR</h2>
-                    </span>
-                
+
+                <span class="meet-fastcar__header">
+                    <h2 class="meet-fastcar__header">— MEET FASTCAR</h2>
+                </span>
+
                 <div class="ccc">
                     <span class="about-us__subtitle">
-                        <h3 class="about-us__subtitle" >About Us</h3>
+                        <h3 class="about-us__subtitle">About Us</h3>
                     </span>
-                    
-                        <span>
-                            <p class="fat__text__meet-fastcar" ><strong>We do everything for you to drive with <br>
-                                    maximum comfort!</strong></p>
-                        </span>
-                  
+
+                    <span>
+                        <p class="fat__text__meet-fastcar"><strong>We do everything for you to drive with <br>
+                                maximum comfort!</strong></p>
+                    </span>
+
                     <span class="meet-fastcar__text">
-                        <p>Our company has been operating on the  US car <br> rental market for over 10 years. ou
-                            can rent a <br> car for any purpose, from <span id="dots">...</span><span id="more">  a business trip to <br> conquering roads with 
-                            difficult surfaces.<br><br>
-                            We have several pick-up locations in New York <br> so that you can take and leave the 
-                            rented car in <br> any convenient place. FASTCAR offers the most <br> favorable conditions
-                            for car rental.</span></p>
+                        <p>Our company has been operating on the US car <br> rental market for over 10 years. ou
+                            can rent a <br> car for any purpose, from <span id="dots">...</span><span id="more"> a
+                                business trip to <br> conquering roads with
+                                difficult surfaces.<br><br>
+                                We have several pick-up locations in New York <br> so that you can take and leave the
+                                rented car in <br> any convenient place. FASTCAR offers the most <br> favorable
+                                conditions
+                                for car rental.</span></p>
                     </span>
-                   <button id="btn" onclick="readMore()">More</button>
-                        <div class="button__about-us">
-                            <a class="contact-us__button" href="#contact__us">CONTACT US</a>
-                        </div>
+                    <button id="btn" onclick="readMore()">More</button>
+                    <div class="button__about-us">
+                        <a class="contact-us__button" href="#contact__us">CONTACT US</a>
                     </div>
-               
+                </div>
+
             </div>
 
         </section>
@@ -145,4 +163,5 @@ background-color:rgb(241, 218, 85);
     </main>
 </body>
 <script src="js/readmore.js"> </script>
+
 </html>
